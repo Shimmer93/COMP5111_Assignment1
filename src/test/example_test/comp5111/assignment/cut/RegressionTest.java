@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ Regression_3_Test0.class, Regression_3_Test1.class })
-public class Regression_3_Test {
+@Suite.SuiteClasses({ RegressionTest0.class, RegressionTest1.class })
+public class RegressionTest {
 }
 
