@@ -34,7 +34,7 @@ public class Assignment1 {
             String testClassName = args[1];
         	runJunitTests(testClassName);
 
-        	StmtCounter.report();
+        	StmtCounter.report(testClassName);
 
         } else if (args[0].compareTo("1") == 0) {
             // TODO invoke your branch coverage instrument function
@@ -44,7 +44,7 @@ public class Assignment1 {
             String testClassName = args[1];
             runJunitTests(testClassName);
 
-            BranchCounter.report();
+            BranchCounter.report(testClassName);
 
         }
     }

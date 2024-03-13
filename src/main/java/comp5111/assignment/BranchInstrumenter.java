@@ -2,11 +2,7 @@ package comp5111.assignment;
 
 import soot.*;
 import soot.jimple.*;
-import soot.jimple.internal.JGotoStmt;
-import soot.jimple.internal.JIdentityStmt;
 import soot.jimple.internal.JIfStmt;
-import soot.jimple.internal.JReturnStmt;
-import soot.jimple.internal.JReturnVoidStmt;
 import soot.util.Chain;
 
 import java.util.Iterator;
@@ -17,8 +13,8 @@ public class BranchInstrumenter extends BodyTransformer{
 	
 	/* some internal fields */
     static SootClass counterClass;
-    static SootMethod addInvocationBranchMethod;
-    static SootMethod addInvocationTargetMethod;
+    static SootMethod addConditionInvocationMethod;
+    static SootMethod addDefaultInvocationMethod;
 
     static {
         counterClass = Scene.v().loadClassAndSupport("comp5111.assignment.BranchCounter");
@@ -26,8 +22,8 @@ public class BranchInstrumenter extends BodyTransformer{
         // for (SootMethod method : methods) {
         //     System.out.println("method: " + method.getSubSignature());
         // }
-        addInvocationBranchMethod = counterClass.getMethod("void addBranchInvocation(java.lang.String,java.lang.String,java.lang.String)");
-        addInvocationTargetMethod = counterClass.getMethod("void addTargetInvocation(java.lang.String,java.lang.String,java.lang.String)");
+        addConditionInvocationMethod = counterClass.getMethod("void addConditionInvocation(java.lang.String,java.lang.String)");
+        addDefaultInvocationMethod = counterClass.getMethod("void addDefaultInvocation(java.lang.String,java.lang.String)");
     }
 
 	/*
@@ -68,20 +64,24 @@ public class BranchInstrumenter extends BodyTransformer{
             if (!(stmt instanceof JIfStmt)) {
                 continue;
             }
-            Stmt target = ((JIfStmt) stmt).getTarget();
-            
+            String conditionString = ((JIfStmt) stmt).getCondition().toString();
+            String targetString = ((JIfStmt) stmt).getTarget().toString();
+            String defaultString = units.getSuccOf(stmt).toString();
             String branchIdentifier = method.getSignature() + index;
-            BranchCounter.addBranch(branchIdentifier, className, stmt.toString(), target.toString());
+            int lineNumber = stmt.getJavaSourceStartLineNumber();
+            BranchCounter.addBranch(branchIdentifier, className, conditionString, defaultString, targetString, lineNumber);
 
-            InvokeExpr incExpr = null;
-            incExpr = Jimple.v().newStaticInvokeExpr(addInvocationBranchMethod.makeRef(), StringConstant.v(branchIdentifier), StringConstant.v(className), StringConstant.v(stmt.toString()));
-            Stmt incStmt = Jimple.v().newInvokeStmt(incExpr);
-            units.insertAfter(incStmt, stmt);
+            InvokeExpr incExprCondition = null;
+            incExprCondition = Jimple.v().newStaticInvokeExpr(addConditionInvocationMethod.makeRef(), 
+                StringConstant.v(branchIdentifier), StringConstant.v(className));
+            Stmt incStmtCondition = Jimple.v().newInvokeStmt(incExprCondition);
+            units.insertBefore(incStmtCondition, stmt);
 
-            InvokeExpr incExpr2 = null;
-            incExpr2 = Jimple.v().newStaticInvokeExpr(addInvocationTargetMethod.makeRef(), StringConstant.v(branchIdentifier), StringConstant.v(className), StringConstant.v(target.toString()));
-            Stmt incStmt2 = Jimple.v().newInvokeStmt(incExpr2);
-            units.insertBefore(incStmt2, stmt);
+            InvokeExpr incExprDefault = null;
+            incExprDefault = Jimple.v().newStaticInvokeExpr(addDefaultInvocationMethod.makeRef(), 
+                StringConstant.v(branchIdentifier), StringConstant.v(className));
+            Stmt incStmtDefault = Jimple.v().newInvokeStmt(incExprDefault);
+            units.insertAfter(incStmtDefault, stmt);
 
             index++;
         }    	

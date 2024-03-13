@@ -21,7 +21,7 @@ public class StmtInstrumenter extends BodyTransformer{
         // for (SootMethod method : methods) {
         //     System.out.println("method: " + method.getSubSignature());
         // }
-        addInvocationMethod = counterClass.getMethod("void addStmtInvocation(java.lang.String,java.lang.String,java.lang.String)");
+        addInvocationMethod = counterClass.getMethod("void addStmtInvocation(java.lang.String,java.lang.String)");
     }
 
 	/*
@@ -60,12 +60,14 @@ public class StmtInstrumenter extends BodyTransformer{
             if (stmt instanceof JIdentityStmt) {
             	continue;
             }
-            
+
             String stmtIdentifier = method.getSignature() + index;
-            StmtCounter.addStmt(stmtIdentifier, className, stmt.toString());
+            int lineNumber = stmt.getJavaSourceStartLineNumber();
+            StmtCounter.addStmt(stmtIdentifier, className, stmt.toString(), lineNumber);
 
             InvokeExpr incExpr = null;
-            incExpr = Jimple.v().newStaticInvokeExpr(addInvocationMethod.makeRef(), StringConstant.v(stmtIdentifier), StringConstant.v(className), StringConstant.v(stmt.toString()));
+            incExpr = Jimple.v().newStaticInvokeExpr(addInvocationMethod.makeRef(), 
+                StringConstant.v(stmtIdentifier), StringConstant.v(className));
             Stmt incStmt = Jimple.v().newInvokeStmt(incExpr);
             units.insertBefore(incStmt, stmt);
 
