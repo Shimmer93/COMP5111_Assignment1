@@ -31,7 +31,6 @@ public class Assignment1 {
         	stmtInstrumentWithSoot(classArgs);
 
             // TODO run tests on instrumented classes to generate coverage report
-            // get the real class names if use -process-dir
             String testClassName = args[1];
         	runJunitTests(testClassName);
 
@@ -39,8 +38,13 @@ public class Assignment1 {
 
         } else if (args[0].compareTo("1") == 0) {
             // TODO invoke your branch coverage instrument function
+            branchInstrumentWithSoot(classArgs);
 
             // TODO run tests on instrumented classes to generate coverage report
+            String testClassName = args[1];
+            runJunitTests(testClassName);
+
+            BranchCounter.report();
 
         }
     }
@@ -69,6 +73,37 @@ public class Assignment1 {
         Pack jtp = PackManager.v().getPack("jtp");
 
         StmtInstrumenter instrumenter = new StmtInstrumenter();
+        jtp.add(new Transform("jtp.instrumenter", instrumenter));
+
+        // String classUnderTest = "comp5111.example.cut.Subject";
+        // pass arguments to soot
+        soot.Main.main(classArgs);  // added phases will be executed in this method
+    }
+
+    private static void branchInstrumentWithSoot(String [] classArgs){
+    	String classUnderTestPath = "./raw-classes";
+        String targetPath = "./target/classes";
+
+        String classPathSeparator = ":";
+        if (System.getProperty("os.name").toLowerCase().contains("win")) {
+            classPathSeparator = ";";
+        }
+        
+        /*Set the soot-classpath to include the helper class and class to analyze*/
+        System.out.println(Scene.v().defaultClassPath() + classPathSeparator + targetPath + classPathSeparator + classUnderTestPath);
+        Options.v().set_soot_classpath(Scene.v().defaultClassPath() + classPathSeparator + targetPath + classPathSeparator + classUnderTestPath);
+        // we set the soot output dir to target/classes so that the instrumented class can override the class file
+        Options.v().set_output_dir(targetPath);
+
+        // retain line numbers
+        Options.v().set_keep_line_number(true);
+        // retain the original variable names
+        Options.v().setPhaseOption("jb", "use-original-names:true");
+
+        /* add a phase to transformer pack by call Pack.add */
+        Pack jtp = PackManager.v().getPack("jtp");
+
+        BranchInstrumenter instrumenter = new BranchInstrumenter();
         jtp.add(new Transform("jtp.instrumenter", instrumenter));
 
         // String classUnderTest = "comp5111.example.cut.Subject";

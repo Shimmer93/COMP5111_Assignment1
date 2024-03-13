@@ -1,6 +1,7 @@
 package comp5111.assignment;
 
 import java.util.*;
+import java.io.*;
 
 public class StmtCounter {
 
@@ -18,25 +19,20 @@ public class StmtCounter {
 		}
 	}
 
-	private static Map<String, List<StmtData>> stmtDataMap = new HashMap<>();
+	private static Map<String, Map<String, StmtData>> stmtDataMap = new HashMap<>();
 	// private static Map<String, Integer> stmtNumInvocationMap = new HashMap<>();
 	// private static Map<String, Integer> stmtNumMap = new HashMap<>();
 	
-	public static void addStmt(String className, String stmtString) {
+	public static void addStmt(String stmtIdentifier, String className, String stmtString) {
 		if (!stmtDataMap.containsKey(className)) {
-			stmtDataMap.put(className, new ArrayList<StmtData>());
+			stmtDataMap.put(className, new HashMap<String, StmtData>());
 		}
-		stmtDataMap.get(className).add(new StmtData(stmtString));
+		stmtDataMap.get(className).put(stmtIdentifier, new StmtData(stmtString));
 	}
 
-	public static void addStmtInvocation(String className, String stmtString) {
+	public static void addStmtInvocation(String stmtIdentifier, String className, String stmtString) {
 		assert stmtDataMap.containsKey(className);
-		for (StmtData stmtData : stmtDataMap.get(className)) {
-			if (stmtData.stmtString.equals(stmtString)) {
-				stmtData.invocate();
-				return;
-			}
-		}
+		stmtDataMap.get(className).get(stmtIdentifier).invocate();
 	}
 
 	public static String[] getClassNames() {
@@ -44,12 +40,12 @@ public class StmtCounter {
 	}
 
 	public static int getNumStmtsInClass(String className) {
-		return stmtDataMap.get(className).size();
+		return stmtDataMap.get(className).values().size();
 	}
 
 	public static int getNumInvocationsInClass(String className) {
 		int numInvocations = 0;
-		for (StmtData stmtData : stmtDataMap.get(className)) {
+		for (StmtData stmtData : stmtDataMap.get(className).values()) {
 			if (stmtData.invocated) {
 				numInvocations++;
 			}
@@ -68,6 +64,18 @@ public class StmtCounter {
 			System.out.println(className + ": " + numInvocationsInClass + " / " + numStmtsInClass + " = " + ratio);
 			numStmtsTotal += numStmtsInClass;
 			numInvocationsTotal += numInvocationsInClass;
+
+			try {
+				OutputStream os = new FileOutputStream(className + ".txt");
+				for (StmtData stmtData : stmtDataMap.get(className).values()) {
+					String invocated = stmtData.invocated ? "T" : "F";
+					String line = stmtData.stmtString + " " + invocated + "\n";
+					os.write(line.getBytes());
+				}
+				os.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 
 		float ratioTotal = (float)numInvocationsTotal / numStmtsTotal;

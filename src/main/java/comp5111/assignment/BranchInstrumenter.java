@@ -2,26 +2,32 @@ package comp5111.assignment;
 
 import soot.*;
 import soot.jimple.*;
+import soot.jimple.internal.JGotoStmt;
 import soot.jimple.internal.JIdentityStmt;
+import soot.jimple.internal.JIfStmt;
+import soot.jimple.internal.JReturnStmt;
+import soot.jimple.internal.JReturnVoidStmt;
 import soot.util.Chain;
 
 import java.util.Iterator;
 import java.util.Map;
 // import java.util.List;
 
-public class StmtInstrumenter extends BodyTransformer{
+public class BranchInstrumenter extends BodyTransformer{
 	
 	/* some internal fields */
     static SootClass counterClass;
-    static SootMethod addInvocationMethod;
+    static SootMethod addInvocationBranchMethod;
+    static SootMethod addInvocationTargetMethod;
 
     static {
-        counterClass = Scene.v().loadClassAndSupport("comp5111.assignment.StmtCounter");
+        counterClass = Scene.v().loadClassAndSupport("comp5111.assignment.BranchCounter");
         // List<SootMethod> methods = counterClass.getMethods();
         // for (SootMethod method : methods) {
         //     System.out.println("method: " + method.getSubSignature());
         // }
-        addInvocationMethod = counterClass.getMethod("void addStmtInvocation(java.lang.String,java.lang.String,java.lang.String)");
+        addInvocationBranchMethod = counterClass.getMethod("void addBranchInvocation(java.lang.String,java.lang.String,java.lang.String)");
+        addInvocationTargetMethod = counterClass.getMethod("void addTargetInvocation(java.lang.String,java.lang.String,java.lang.String)");
     }
 
 	/*
@@ -53,23 +59,31 @@ public class StmtInstrumenter extends BodyTransformer{
 
             // cast back to a statement.
             Stmt stmt = (Stmt) stmtIt.next();
-
+            
             // there are many kinds of statements, here we are only
             // interested in return statements
             // NOTE: there are two kinds of return statements, with or without return value
-            if (stmt instanceof JIdentityStmt) {
-            	continue;
-            }
             
-            String stmtIdentifier = method.getSignature() + index;
-            StmtCounter.addStmt(stmtIdentifier, className, stmt.toString());
+            // skip identity statements
+            if (!(stmt instanceof JIfStmt)) {
+                continue;
+            }
+            Stmt target = ((JIfStmt) stmt).getTarget();
+            
+            String branchIdentifier = method.getSignature() + index;
+            BranchCounter.addBranch(branchIdentifier, className, stmt.toString(), target.toString());
 
             InvokeExpr incExpr = null;
-            incExpr = Jimple.v().newStaticInvokeExpr(addInvocationMethod.makeRef(), StringConstant.v(stmtIdentifier), StringConstant.v(className), StringConstant.v(stmt.toString()));
+            incExpr = Jimple.v().newStaticInvokeExpr(addInvocationBranchMethod.makeRef(), StringConstant.v(branchIdentifier), StringConstant.v(className), StringConstant.v(stmt.toString()));
             Stmt incStmt = Jimple.v().newInvokeStmt(incExpr);
-            units.insertBefore(incStmt, stmt);
+            units.insertAfter(incStmt, stmt);
+
+            InvokeExpr incExpr2 = null;
+            incExpr2 = Jimple.v().newStaticInvokeExpr(addInvocationTargetMethod.makeRef(), StringConstant.v(branchIdentifier), StringConstant.v(className), StringConstant.v(target.toString()));
+            Stmt incStmt2 = Jimple.v().newInvokeStmt(incExpr2);
+            units.insertBefore(incStmt2, stmt);
 
             index++;
-        }
+        }    	
     }
 }
