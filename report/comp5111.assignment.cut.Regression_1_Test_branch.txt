@@ -1,0 +1,1157 @@
+comp5111.assignment.cut.Subject$ParameterHandler
+========================================
+473: $stack9 == 0
+	goto [?= $stack6 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: java.lang.String getToken(boolean)>(0)] Yes
+	$stack10 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int i2> Yes
+471: $stack5 == 0
+	$stack8 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: char[] chars> Yes
+	$stack6 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: java.lang.String getToken(boolean)>(0) Yes
+556: l1 != null
+	$stack5 = new java.util.HashMap Yes
+	$stack3 = lengthof l1 Yes
+452: l6 >= l5
+	l7 = l2[l6] Yes
+	return l3 Yes
+578: l3 <= $stack9
+	$stack36 = lengthof l1 Yes
+	$stack36 = l3 Yes
+581: $stack10 == 0
+	$stack11 = newarray (char)[2] Yes
+	return $stack8 Yes
+572: l1 != null
+	$stack40 = new java.util.HashMap Yes
+	$stack8 = new java.util.HashMap Yes
+592: $stack17 == 0
+	$stack19 = <java.util.Locale: java.util.Locale ENGLISH> No
+	virtualinvoke $stack8.<java.util.HashMap: java.lang.Object put(java.lang.Object,java.lang.Object)>(l6, l7) Yes
+591: l6 == null
+	$stack16 = virtualinvoke l6.<java.lang.String: int length()>() Yes
+	$stack10 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: boolean hasChar()>() Yes
+591: $stack16 <= 0
+	$stack17 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: boolean lowerCaseNames> Yes
+	$stack10 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: boolean hasChar()>() Yes
+588: $stack14 == 0
+	$stack24 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int pos> Yes
+	if l6 == null goto $stack10 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: boolean hasChar()>() Yes
+588: $stack25 != l4
+	$stack27 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int pos> Yes
+	if l6 == null goto $stack10 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: boolean hasChar()>() No
+584: $stack13 == 0
+	$stack29 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int pos> Yes
+	$stack14 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: boolean hasChar()>() Yes
+584: $stack30 != 61
+	$stack32 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int pos> No
+	$stack14 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: boolean hasChar()>() Yes
+709: l2 == 102
+	if l2 != 70 goto return null No
+	if l3 == 97 goto (branch) No
+709: l2 != 70
+	if l3 == 97 goto (branch) No
+	return null No
+699: l5 != 69
+	$stack33 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	goto [?= return null] No
+703: $stack13 != 5
+	l2 = virtualinvoke l1.<java.lang.String: char charAt(int)>(0) No
+	return null Yes
+699: l5 == 101
+	if l5 != 69 goto (branch) No
+	$stack33 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+709: l5 == 115
+	if l5 != 83 goto return null No
+	if l6 == 101 goto $stack19 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+709: l4 == 108
+	if l4 != 76 goto return null No
+	if l5 == 115 goto (branch) No
+709: l4 != 76
+	if l5 == 115 goto (branch) No
+	return null No
+709: l3 == 97
+	if l3 != 65 goto return null No
+	if l4 == 108 goto (branch) No
+709: l3 != 65
+	if l4 == 108 goto (branch) No
+	return null No
+424: $stack45 == 0
+	$stack46 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int i1> Yes
+	$stack6 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int i2> Yes
+424: $stack4 >= $stack3
+	$stack43 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: char[] chars> Yes
+	$stack6 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int i2> Yes
+428: $stack36 == 0
+	$stack38 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int i2> Yes
+	if l1 == 0 goto l2 = null Yes
+428: $stack6 <= $stack5
+	$stack34 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: char[] chars> Yes
+	if l1 == 0 goto l2 = null Yes
+432: $stack17 < 2
+	$stack22 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: char[] chars> No
+	l2 = null No
+432: l1 == 0
+	$stack16 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int i2> No
+	l2 = null Yes
+432: $stack27 != 34
+	$stack28 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: int i1> No
+	l2 = null No
+432: $stack23 != 34
+	$stack26 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: char[] chars> No
+	l2 = null No
+437: $stack8 <= $stack7
+	$stack9 = new java.lang.String Yes
+	return l2 Yes
+709: l6 != 69
+	$stack19 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	return null No
+709: l5 != 83
+	if l6 == 101 goto $stack19 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	return null No
+709: l6 == 101
+	if l6 != 69 goto return null No
+	$stack19 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+614: l1 != l3
+	$stack6 = <java.lang.Boolean: java.lang.Boolean FALSE> Yes
+	if l1 != l4 goto $stack5 = new java.lang.IllegalArgumentException Yes
+612: l1 != l2
+	$stack7 = <java.lang.Boolean: java.lang.Boolean TRUE> Yes
+	if l1 != l3 goto (branch) Yes
+616: l1 != l4
+	return null Yes
+	$stack5 = new java.lang.IllegalArgumentException Yes
+517: l2 == null
+	$stack11 = lengthof l2 Yes
+	$stack10 = new java.util.HashMap Yes
+517: $stack11 != 0
+	$stack10 = new java.util.HashMap No
+	l3 = l2[0] Yes
+521: l1 == null
+	l4 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+	$stack12 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: java.util.Map parse(java.lang.String,char)>(l1, l3) No
+523: l7 >= l6
+	l8 = l2[l7] Yes
+	$stack12 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: java.util.Map parse(java.lang.String,char)>(l1, l3) Yes
+525: l9 == -1
+	if l9 >= l4 goto l7 = l7 + 1 No
+	l7 = l7 + 1 Yes
+525: l9 >= l4
+	l4 = l9 No
+	l7 = l7 + 1 No
+687: l2 == 121
+	if l2 != 89 goto (branch) Yes
+	if l3 == 101 goto (branch) No
+687: l2 != 89
+	if l3 == 101 goto (branch) No
+	if l2 == 111 goto (branch) Yes
+683: $stack11 != 3
+	l2 = virtualinvoke l1.<java.lang.String: char charAt(int)>(0) Yes
+	$stack12 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+690: l3 == 102
+	if l3 != 70 goto (branch) No
+	if l4 == 102 goto $stack44 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+730: l3 != null
+	$stack12 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	if l4 != null goto $stack8 = new java.lang.IllegalArgumentException No
+732: l4 != null
+	return null No
+	$stack8 = new java.lang.IllegalArgumentException No
+690: l2 == 111
+	if l2 != 79 goto (branch) Yes
+	if l3 == 102 goto (branch) No
+727: l1 != null
+	if l2 != null goto (branch) No
+	$stack5 = virtualinvoke l1.<java.lang.String: boolean equals(java.lang.Object)>(l2) Yes
+690: l2 != 79
+	if l3 == 102 goto (branch) No
+	goto [?= return null] Yes
+728: l2 != null
+	$stack13 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	if l3 != null goto (branch) No
+687: l4 == 115
+	if l4 != 83 goto (branch) No
+	$stack43 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+687: l4 != 83
+	$stack43 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	if l2 == 111 goto (branch) No
+687: l3 == 101
+	if l3 != 69 goto (branch) No
+	if l4 == 115 goto $stack43 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+687: l3 != 69
+	if l4 == 115 goto $stack43 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	if l2 == 111 goto (branch) No
+765: l2 <= 0
+	$stack5 = 1 No
+	$stack5 = 0 Yes
+757: $stack6 == 0
+	if l2 >= 1 goto return 0 Yes
+	l3 = l3 + 1 Yes
+758: l2 >= 1
+	l2 = l2 + 1 Yes
+	return 0 Yes
+739: $stack7 == 0
+	return null Yes
+	$stack8 = new java.lang.IllegalArgumentException Yes
+752: l1 != null
+	return 0 Yes
+	l2 = -1 Yes
+756: l3 >= $stack4
+	$stack6 = l1[l3] Yes
+	if l2 <= 0 goto $stack5 = 0 Yes
+735: $stack5 == 0
+	$stack10 = <java.lang.Boolean: java.lang.Boolean TRUE> Yes
+	$stack6 = virtualinvoke l1.<java.lang.String: boolean equals(java.lang.Object)>(l3) Yes
+737: $stack6 == 0
+	$stack9 = <java.lang.Boolean: java.lang.Boolean FALSE> Yes
+	$stack7 = virtualinvoke l1.<java.lang.String: boolean equals(java.lang.Object)>(l4) Yes
+499: l2 != 34
+	if l3 != 0 goto $stack22 = 0 No
+	if l4 != 0 goto $stack16 = 0 No
+499: l4 != 0
+	if l2 != 34 goto (branch) No
+	if l4 != 0 goto $stack16 = 0 No
+496: $stack23 == 0
+	goto [?= $stack8 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: java.lang.String getToken(boolean)>(1)] No
+	if l4 != 0 goto (branch) No
+496: l3 != 0
+	$stack23 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: boolean isOneOf(char,char[])>(l2, l1) No
+	if l4 != 0 goto (branch) No
+502: l2 != 92
+	$stack16 = 1 No
+	$stack16 = 0 No
+502: l4 != 0
+	if l2 != 92 goto $stack16 = 0 No
+	$stack16 = 0 No
+500: l3 != 0
+	$stack22 = 1 No
+	$stack22 = 0 No
+690: l4 != 70
+	$stack44 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	goto [?= return null] No
+694: $stack12 != 4
+	l2 = virtualinvoke l1.<java.lang.String: char charAt(int)>(0) No
+	$stack13 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+690: l3 != 70
+	if l4 == 102 goto $stack44 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	goto [?= return null] No
+690: l4 == 102
+	if l4 != 70 goto (branch) No
+	$stack44 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+494: $stack7 == 0
+	$stack10 = l0.<comp5111.assignment.cut.Subject$ParameterHandler: char[] chars> No
+	$stack8 = virtualinvoke l0.<comp5111.assignment.cut.Subject$ParameterHandler: java.lang.String getToken(boolean)>(1) No
+542: l1 != null
+	$stack5 = new java.util.HashMap No
+	$stack3 = virtualinvoke l1.<java.lang.String: char[] toCharArray()>() Yes
+699: l4 == 117
+	if l4 != 85 goto (branch) No
+	if l5 == 101 goto $stack33 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+699: l4 != 85
+	if l5 == 101 goto $stack33 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	goto [?= return null] No
+699: l3 == 114
+	if l3 != 82 goto (branch) No
+	if l4 == 117 goto (branch) No
+699: l3 != 82
+	if l4 == 117 goto (branch) No
+	goto [?= return null] No
+699: l2 == 116
+	if l2 != 84 goto (branch) No
+	if l3 == 114 goto (branch) No
+699: l2 != 84
+	if l3 == 114 goto (branch) No
+	goto [?= return null] No
+453: l1 != l7
+	l3 = 1 Yes
+	l6 = l6 + 1 Yes
+669: l2 == 102
+	if l2 != 70 goto (branch) No
+	$stack67 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+669: l2 == 78
+	if l2 == 102 goto $stack67 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	$stack67 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+669: l2 == 110
+	if l2 == 78 goto $stack67 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	$stack67 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+664: $stack9 != 1
+	l2 = virtualinvoke l1.<java.lang.String: char charAt(int)>(0) No
+	$stack10 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+661: $stack8 == 0
+	$stack68 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	$stack9 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+658: l1 != null
+	return null No
+	$stack7 = "true" Yes
+666: l2 != 84
+	$stack66 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	if l2 == 110 goto $stack67 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+666: l2 == 116
+	if l2 != 84 goto (branch) No
+	$stack66 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+666: l2 == 89
+	if l2 == 116 goto $stack66 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	$stack66 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+666: l2 == 121
+	if l2 == 89 goto $stack66 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	$stack66 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+413: $stack2 >= $stack1
+	$stack3 = 1 Yes
+	$stack3 = 0 Yes
+634: l2 != null
+	$stack13 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	if l3 != null goto (branch) No
+633: l1 != null
+	if l2 != null goto (branch) No
+	$stack5 = virtualinvoke l1.<java.lang.Integer: boolean equals(java.lang.Object)>(l2) Yes
+638: l4 != null
+	return null No
+	$stack8 = new java.lang.IllegalArgumentException No
+636: l3 != null
+	$stack12 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	if l4 != null goto $stack8 = new java.lang.IllegalArgumentException No
+643: $stack6 == 0
+	$stack9 = <java.lang.Boolean: java.lang.Boolean FALSE> Yes
+	$stack7 = virtualinvoke l1.<java.lang.Integer: boolean equals(java.lang.Object)>(l4) Yes
+641: $stack5 == 0
+	$stack10 = <java.lang.Boolean: java.lang.Boolean TRUE> Yes
+	$stack6 = virtualinvoke l1.<java.lang.Integer: boolean equals(java.lang.Object)>(l3) Yes
+645: $stack7 == 0
+	return null Yes
+	$stack8 = new java.lang.IllegalArgumentException Yes
+669: l2 != 70
+	$stack67 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	goto [?= return null] No
+673: $stack10 != 2
+	l2 = virtualinvoke l1.<java.lang.String: char charAt(int)>(0) No
+	$stack11 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+679: l3 == 111
+	if l3 != 79 goto (branch) No
+	$stack58 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+679: l3 != 79
+	$stack58 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	goto [?= return null] No
+679: l2 == 110
+	if l2 != 78 goto (branch) No
+	if l3 == 111 goto $stack58 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+679: l2 != 78
+	if l3 == 111 goto $stack58 = <java.lang.Boolean: java.lang.Boolean FALSE> No
+	goto [?= return null] No
+676: l3 == 110
+	if l3 != 78 goto (branch) No
+	$stack57 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+676: l3 != 78
+	$stack57 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	if l2 == 110 goto (branch) No
+676: l2 == 111
+	if l2 != 79 goto (branch) No
+	if l3 == 110 goto $stack57 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+676: l2 != 79
+	if l3 == 110 goto $stack57 = <java.lang.Boolean: java.lang.Boolean TRUE> No
+	if l2 == 110 goto (branch) No
+
+comp5111.assignment.cut.Subject$SortTools
+========================================
+1146: l3 < $stack7
+	$stack4 = new java.lang.IllegalArgumentException No
+	$stack9 = l1[l2] No
+1146: l2 >= $stack6
+	$stack7 = lengthof l1 No
+	$stack4 = new java.lang.IllegalArgumentException No
+1148: $stack11 != $stack10
+	$stack12 = 0 No
+	$stack12 = 1 No
+1148: $stack9 >= $stack8
+	$stack12 = -1 No
+	$stack11 = l1[l2] No
+1264: l1 == null
+	if l2 < 0 goto return -10086 No
+	return -10086 No
+1264: l3 < 0
+	$stack9 = lengthof l1 No
+	return -10086 No
+1264: l2 < 0
+	if l3 < 0 goto return -10086 No
+	return -10086 No
+1165: l2 >= l1
+	$stack3 = 1 Yes
+	$stack3 = 0 Yes
+1155: l3 < $stack6
+	return null No
+	$stack8 = l1[l2] No
+1217: l3 >= l4
+	$stack13 = l2 No
+	return l1 No
+1155: l2 >= $stack5
+	$stack6 = lengthof l1 No
+	return null No
+1213: l4 < $stack6
+	return null No
+	$stack8 = l3 - l2 No
+1155: l3 < 0
+	$stack5 = lengthof l1 No
+	return null No
+1215: $stack8 != $stack7
+	if l3 >= l4 goto return l1 No
+	virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int[] reverse(int[],int,int)>(l1, l2, l3) No
+1155: l2 < 0
+	if l3 < 0 goto return null No
+	return null No
+1213: l2 > l3
+	if l3 > l4 goto return null No
+	return null No
+1213: l3 > l4
+	$stack6 = lengthof l1 No
+	return null No
+1264: l3 < $stack10
+	return -10086 No
+	l5 = l3 - l2 No
+1213: 0 > l2
+	if l2 > l3 goto return null No
+	return null No
+1264: l2 >= $stack9
+	$stack10 = lengthof l1 No
+	return -10086 No
+1270: $stack11 >= 0
+	l5 = l6 No
+	l2 = l7 + 1 No
+1267: l5 <= 0
+	l6 = l5 >>> 1 No
+	return l2 No
+1146: l1 == null
+	if l2 < 0 goto $stack4 = new java.lang.IllegalArgumentException Yes
+	$stack4 = new java.lang.IllegalArgumentException No
+1146: l3 < 0
+	$stack6 = lengthof l1 No
+	$stack4 = new java.lang.IllegalArgumentException No
+1146: l2 < 0
+	if l3 < 0 goto $stack4 = new java.lang.IllegalArgumentException No
+	$stack4 = new java.lang.IllegalArgumentException Yes
+1122: l5 <= l2
+	$stack14 = l5 - 1 No
+	l4 = l4 + 1 No
+1123: $stack16 <= $stack15
+	$stack17 = l5 - 1 No
+	l4 = l4 + 1 No
+1301: l1 == null
+	if l2 < 0 goto return null No
+	return null Yes
+1195: 0 > l2
+	if l2 > l3 goto return null Yes
+	return null No
+1119: l1 == null
+	if l2 < 0 goto return null No
+	return null No
+1195: l2 > l3
+	if l3 > l4 goto return null Yes
+	return null No
+1119: $stack9 < $stack8
+	return null No
+	l4 = l2 + 1 No
+1197: l2 == l3
+	if l3 != l4 goto virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int[] doRotate(int[],int,int,int)>(l1, l2, l3, l4) No
+	return l1 No
+1121: l4 >= $stack10
+	l5 = l4 - 1 No
+	return l1 No
+1197: l3 != l4
+	return l1 No
+	virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int[] doRotate(int[],int,int,int)>(l1, l2, l3, l4) No
+1119: l2 < 0
+	if l3 < 0 goto return null No
+	return null No
+1195: l3 > l4
+	$stack6 = lengthof l1 Yes
+	return null No
+1119: l3 < 0
+	$stack9 = l2 + l3 No
+	return null No
+1195: l4 < $stack6
+	return null Yes
+	if l2 == l3 goto return l1 No
+1307: l6 >= l4
+	$stack23 = virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int compare(int[],int,int)>(l1, l5, l6) No
+	virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int[] swap(int[],int,int)>(l1, l2, l5) No
+1178: l3 < $stack5
+	return null No
+	l3#5 = l3 + -1 No
+1238: l1 == null
+	if l2 < 0 goto return -10086 No
+	return -10086 No
+1180: l2 >= l3#5
+	virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int[] swap(int[],int,int)>(l1, l2, l3#5) No
+	return l1 No
+1238: l2 < 0
+	if l3 < 0 goto return -10086 No
+	return -10086 No
+1301: l2 >= $stack8
+	$stack9 = lengthof l1 No
+	return null No
+1301: l3 >= $stack9
+	if l4 < 0 goto return null No
+	return null No
+1301: l2 < 0
+	if l3 < 0 goto return null No
+	return null No
+1301: l3 < 0
+	$stack8 = lengthof l1 No
+	return null No
+1304: l5 >= l4
+	l6 = l5 + 1 No
+	return l1 No
+1314: l6 >= l4
+	$stack14 = virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int compare(int[],int,int)>(l1, l2, l6) No
+	return l1 No
+1306: $stack12 >= 0
+	if l6 >= l4 goto virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int[] swap(int[],int,int)>(l1, l2, l5) No
+	if l6 >= l4 goto return l1 No
+1307: $stack23 >= 0
+	virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int[] swap(int[],int,int)>(l1, l2, l6) No
+	virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int[] swap(int[],int,int)>(l1, l2, l5) No
+1301: l4 < 0
+	$stack10 = lengthof l1 No
+	return null No
+1301: l4 < $stack10
+	return null No
+	l5 = virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int nextNode(int,int)>(l3, l2) No
+1314: $stack14 >= 0
+	virtualinvoke l0.<comp5111.assignment.cut.Subject$SortTools: int[] swap(int[],int,int)>(l1, l2, l6) No
+	return l1 No
+1178: 0 > l2
+	if l2 > l3 goto return null No
+	return null No
+1238: l3 < 0
+	$stack9 = lengthof l1 No
+	return -10086 No
+1178: l2 > l3
+	$stack5 = lengthof l1 No
+	return null No
+1238: l2 >= $stack9
+	$stack10 = lengthof l1 No
+	return -10086 No
+1238: l3 < $stack10
+	return -10086 No
+	l5 = l3 - l2 No
+1241: l5 <= 0
+	l6 = l5 >>> 1 No
+	return l2 No
+1244: $stack11 >= 0
+	l2 = l7 + 1 No
+	l5 = l6 No
+
+comp5111.assignment.cut.Subject$NumberHandler
+========================================
+875: l1 == null
+	$stack3 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+	return 0 No
+1026: l1 == null
+	$stack10 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+	return 0 No
+1026: $stack10 != 0
+	return 0 Yes
+	l2 = virtualinvoke l1.<java.lang.String: char[] toCharArray()>() Yes
+1036: $stack12 != 45
+	$stack77 = 1 No
+	$stack77 = 0 Yes
+1037: l3 <= $stack13
+	$stack57 = l2[$stack77] Yes
+	l3 = l3 + -1 No
+1038: $stack57 != 48
+	$stack59 = $stack77 + 1 No
+	l3 = l3 + -1 Yes
+1038: $stack60 != 120
+	l9 = $stack77 + 2 No
+	l3 = l3 + -1 No
+1040: l9 != l3
+	return 0 No
+	$stack61 = lengthof l2 No
+1044: l9 >= $stack61
+	$stack62 = l2[l9] No
+	return 1 No
+1045: $stack62 < 48
+	$stack73 = l2[l9] No
+	$stack63 = l2[l9] No
+1045: $stack73 <= 57
+	$stack63 = l2[l9] No
+	l9 = l9 + 1 No
+1096: l4 != 0
+	$stack36 = 1 No
+	$stack36 = 0 No
+1096: l7 == 0
+	if l4 != 0 goto $stack36 = 0 No
+	$stack36 = 0 No
+1103: l7 == 0
+	$stack31 = 1 No
+	$stack31 = 0 No
+1103: l6 != 0
+	if l7 == 0 goto $stack31 = 0 No
+	$stack31 = 0 No
+1094: $stack37 != 76
+	if l7 == 0 goto $stack36 = 0 No
+	return 0 No
+1094: $stack35 == 108
+	$stack37 = l2[l9] No
+	if l7 == 0 goto $stack36 = 0 No
+804: l7 >= l6
+	$stack116 = new java.lang.NumberFormatException No
+	$stack111 = l6 + 1 No
+803: l7 <= -1
+	if l7 >= l6 goto $stack111 = l6 + 1 No
+	$stack108 = l6 + 1 No
+787: $stack10 == 0
+	$stack12 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+	return null Yes
+787: l1 == null
+	$stack10 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+	return null No
+787: $stack120 != 0
+	return null No
+	$stack13 = virtualinvoke l1.<java.lang.String: boolean startsWith(java.lang.String)>("--") No
+787: $stack12 != 1
+	$stack119 = virtualinvoke l1.<java.lang.String: char charAt(int)>(0) No
+	$stack13 = virtualinvoke l1.<java.lang.String: boolean startsWith(java.lang.String)>("--") Yes
+793: $stack14 != 0
+	$stack16 = virtualinvoke l1.<java.lang.String: boolean startsWith(java.lang.String)>("-0x") Yes
+	$stack15 = staticinvoke <java.lang.Integer: java.lang.Integer decode(java.lang.String)>(l1) No
+790: $stack13 == 0
+	return null No
+	$stack14 = virtualinvoke l1.<java.lang.String: boolean startsWith(java.lang.String)>("0x") Yes
+802: l6 <= -1
+	if l7 <= -1 goto $stack108 = l6 + 1 No
+	if l7 <= -1 goto l4 = null Yes
+793: $stack16 == 0
+	$stack15 = staticinvoke <java.lang.Integer: java.lang.Integer decode(java.lang.String)>(l1) No
+	$stack17 = virtualinvoke l1.<java.lang.String: int length()>() Yes
+913: l2 >= l1
+	l1 = l2 Yes
+	if l3 >= l1 goto return l1 Yes
+916: l3 >= l1
+	l1 = l3 Yes
+	return l1 Yes
+898: $stack8 >= 0
+	l1 = l5 Yes
+	return l1 Yes
+895: $stack7 >= 0
+	l1 = l3 Yes
+	$stack8 = l5 cmp l1 Yes
+825: $stack63 != $stack66
+	$stack71 = virtualinvoke $stack63.<java.math.BigInteger: int intValue()>() No
+	$stack67 = virtualinvoke $stack63.<java.math.BigInteger: long longValue()>() No
+823: $stack62 == 0
+	$stack63 = new java.math.BigInteger No
+	$stack58 = new java.lang.NumberFormatException No
+1059: l5 != 0
+	if l4 == 0 goto l5 = 1 No
+	return 0 No
+1058: $stack15 != 46
+	if l5 != 0 goto return 0 No
+	$stack16 = l2[l9] Yes
+1063: $stack16 == 101
+	$stack19 = l2[l9] Yes
+	if l4 == 0 goto (branch) No
+1059: l4 == 0
+	return 0 No
+	l5 = 1 No
+1074: l6 != 0
+	return 0 No
+	l6 = 0 No
+1073: $stack21 != 45
+	if l6 != 0 goto l6 = 0 No
+	return 0 Yes
+823: $stack74 != 0
+	$stack62 = virtualinvoke l0.<comp5111.assignment.cut.Subject$NumberHandler: boolean isDigits(java.lang.String)>(l8) No
+	$stack63 = new java.math.BigInteger No
+1064: l4 == 0
+	return 0 No
+	if l7 != 0 goto l4 = 1 No
+1063: $stack19 != 69
+	if l4 == 0 goto (branch) No
+	$stack20 = l2[l9] Yes
+1073: $stack20 == 43
+	$stack21 = l2[l9] Yes
+	if l6 != 0 goto l6 = 0 No
+1068: l7 != 0
+	return 0 No
+	l4 = 1 No
+822: l2 == 108
+	if l2 != 76 goto (branch) Yes
+	if l4 != null goto $stack58 = new java.lang.NumberFormatException No
+817: l7 >= $stack94
+	$stack101 = l7 + 1 No
+	l5 = null No
+817: l7 <= -1
+	$stack93 = virtualinvoke l1.<java.lang.String: int length()>() No
+	l5 = null Yes
+816: $stack24 != 0
+	if l7 <= -1 goto l5 = null Yes
+	if l7 <= -1 goto l5 = null No
+823: $stack61 != 45
+	$stack73 = virtualinvoke l8.<java.lang.String: java.lang.String substring(int)>(1) No
+	$stack62 = virtualinvoke l0.<comp5111.assignment.cut.Subject$NumberHandler: boolean isDigits(java.lang.String)>(l8) No
+1009: l3 >= l4
+	return -1 No
+	return 1 No
+823: l5 != null
+	$stack61 = virtualinvoke l8.<java.lang.String: char charAt(int)>(0) No
+	$stack58 = new java.lang.NumberFormatException No
+1005: l3 != l4
+	return 0 Yes
+	if l3 >= l4 goto return 1 No
+823: l4 != null
+	if l5 != null goto $stack58 = new java.lang.NumberFormatException No
+	$stack58 = new java.lang.NumberFormatException No
+999: $stack6 <= 0
+	return 1 Yes
+	l3 = staticinvoke <java.lang.Float: int floatToIntBits(float)>(l1) Yes
+822: l2 != 76
+	if l4 != null goto $stack58 = new java.lang.NumberFormatException No
+	if l2 == 102 goto $stack80 = staticinvoke <java.lang.Float: java.lang.Float valueOf(java.lang.String)>(l8) Yes
+996: $stack5 >= 0
+	return -1 Yes
+	$stack6 = l1 cmpl l2 Yes
+811: l7 <= -1
+	virtualinvoke l1.<java.lang.String: java.lang.String substring(int,int)>(0, l7) No
+	l4 = null Yes
+1083: $stack48 > 57
+	return 1 No
+	$stack33 = l2[l9] No
+1083: $stack32 < 48
+	$stack48 = l2[l9] No
+	$stack33 = l2[l9] No
+1087: $stack34 != 69
+	return 0 No
+	if l6 != 0 goto $stack35 = l2[l9] No
+1087: $stack33 == 101
+	$stack34 = l2[l9] No
+	return 0 No
+1082: l9 >= $stack30
+	$stack32 = l2[l9] No
+	if l6 != 0 goto $stack31 = 0 No
+1091: $stack43 != 70
+	return l7 No
+	$stack35 = l2[l9] No
+1091: $stack39 == 100
+	$stack40 = l2[l9] No
+	return l7 No
+1091: l6 != 0
+	$stack39 = l2[l9] No
+	$stack35 = l2[l9] No
+1091: $stack42 == 102
+	$stack43 = l2[l9] No
+	return l7 No
+1091: $stack40 == 68
+	$stack42 = l2[l9] No
+	return l7 No
+952: l3 <= l1
+	l1 = l3 Yes
+	return l1 Yes
+967: $stack9 >= 0
+	return -1 Yes
+	$stack10 = l1 cmpl l3 Yes
+949: l2 <= l1
+	l1 = l2 Yes
+	if l3 <= l1 goto return l1 Yes
+970: $stack10 <= 0
+	return 1 Yes
+	l5 = staticinvoke <java.lang.Double: long doubleToLongBits(double)>(l1) Yes
+976: $stack13 != 0
+	return 0 Yes
+	$stack14 = l5 cmp l7 No
+980: $stack14 >= 0
+	return -1 No
+	return 1 No
+875: $stack3 != 0
+	return 0 Yes
+	l2 = 0 Yes
+878: l2 >= $stack4
+	$stack5 = virtualinvoke l1.<java.lang.String: char charAt(int)>(l2) Yes
+	return 1 No
+879: $stack6 != 0
+	return 0 Yes
+	l2 = l2 + 1 No
+859: $stack25 != $stack30
+	$stack31 = virtualinvoke $stack25.<java.math.BigDecimal: double doubleValue()>() No
+	return $stack25 No
+857: $stack25 != $stack28
+	$stack33 = virtualinvoke $stack25.<java.math.BigDecimal: float floatValue()>() No
+	$stack29 = virtualinvoke $stack25.<java.math.BigDecimal: double doubleValue()>() No
+851: $stack38 != $stack43
+	$stack44 = virtualinvoke $stack38.<java.math.BigInteger: long longValue()>() No
+	return $stack38 No
+849: $stack38 != $stack41
+	$stack46 = virtualinvoke $stack38.<java.math.BigInteger: int intValue()>() No
+	$stack42 = virtualinvoke $stack38.<java.math.BigInteger: long longValue()>() No
+846: l5 != null
+	$stack38 = new java.math.BigInteger No
+	$stack25 = new java.math.BigDecimal No
+846: l4 != null
+	if l5 != null goto $stack25 = new java.math.BigDecimal No
+	$stack25 = new java.math.BigDecimal No
+1045: $stack63 < 97
+	$stack69 = l2[l9] No
+	$stack64 = l2[l9] No
+1045: $stack64 < 65
+	$stack65 = l2[l9] No
+	return 0 No
+1045: $stack69 <= 102
+	$stack64 = l2[l9] No
+	l9 = l9 + 1 No
+1055: $stack14 < 48
+	$stack25 = l2[l9] Yes
+	$stack15 = l2[l9] No
+1054: l7 != 0
+	$stack14 = l2[l9] No
+	$stack30 = lengthof l2 No
+1055: $stack25 > 57
+	l7 = 1 No
+	$stack15 = l2[l9] Yes
+1054: l9 < l3
+	$stack29 = l3 + 1 No
+	$stack14 = l2[l9] Yes
+1045: $stack65 <= 70
+	return 0 No
+	l9 = l9 + 1 No
+1054: l6 == 0
+	if l7 != 0 goto $stack30 = lengthof l2 No
+	$stack30 = lengthof l2 No
+1054: l9 >= $stack29
+	if l6 == 0 goto $stack30 = lengthof l2 No
+	$stack30 = lengthof l2 No
+834: l2 == 100
+	if l2 != 68 goto $stack86 = new java.lang.NumberFormatException Yes
+	$stack81 = new java.math.BigDecimal No
+832: l2 != 70
+	$stack80 = staticinvoke <java.lang.Float: java.lang.Float valueOf(java.lang.String)>(l8) No
+	if l2 == 100 goto $stack81 = new java.math.BigDecimal Yes
+832: l2 == 102
+	if l2 != 70 goto (branch) Yes
+	$stack80 = staticinvoke <java.lang.Float: java.lang.Float valueOf(java.lang.String)>(l8) No
+827: $stack63 != $stack68
+	$stack69 = virtualinvoke $stack63.<java.math.BigInteger: long longValue()>() No
+	return $stack63 No
+843: l7 >= $stack49
+	$stack52 = l7 + 1 No
+	l5 = null No
+934: $stack8 <= 0
+	l1 = l5 Yes
+	return l1 Yes
+843: l7 <= -1
+	$stack48 = virtualinvoke l1.<java.lang.String: int length()>() No
+	l5 = null No
+931: $stack7 <= 0
+	l1 = l3 Yes
+	$stack8 = l5 cmp l1 Yes
+836: $stack81 != $stack83
+	$stack84 = virtualinvoke $stack81.<java.math.BigDecimal: double doubleValue()>() No
+	return $stack81 No
+834: l2 != 68
+	$stack81 = new java.math.BigDecimal No
+	$stack86 = new java.lang.NumberFormatException Yes
+
+comp5111.assignment.cut.Subject$TaskHandler
+========================================
+28: l3 != 40
+	return -1 No
+	if l3 != 91 goto l2 = l2 + 1 Yes
+31: l3 != 91
+	l4 = virtualinvoke l1.<java.lang.String: int indexOf(int,int)>(93, l2) No
+	l2 = l2 + 1 Yes
+33: l4 >= 0
+	$stack21 = new java.lang.IllegalArgumentException No
+	$stack13 = l2 + 1 No
+37: $stack15 == 0
+	$stack20 = new java.lang.IllegalArgumentException No
+	$stack16 = staticinvoke <java.util.regex.Pattern: java.util.regex.Pattern compile(java.lang.String)>("-?\\d+(\\.\\d+)?") No
+23: l1 == null
+	$stack7 = virtualinvoke l1.<java.lang.String: boolean isEmpty()>() Yes
+	return -1 No
+23: $stack7 == 0
+	return -1 Yes
+	l2 = 0 Yes
+26: l2 >= $stack8
+	l3 = virtualinvoke l1.<java.lang.String: char charAt(int)>(l2) Yes
+	return -10086 Yes
+28: l3 == 46
+	if l3 != 40 goto (branch) Yes
+	return -1 No
+179: l5 != 91
+	l2 = 1 No
+	l4 = l4 + 1 Yes
+177: l5 != 40
+	l3 = 1 No
+	if l5 != 91 goto l4 = l4 + 1 Yes
+166: l2 == 0
+	if l5 != 93 goto l4 = l4 + 1 No
+	if l3 == 0 goto (branch) Yes
+164: l4 >= $stack7
+	l5 = virtualinvoke l1.<java.lang.String: char charAt(int)>(l4) Yes
+	return l1 Yes
+159: $stack6 == 0
+	return null Yes
+	l2 = 0 Yes
+159: l1 == null
+	$stack6 = virtualinvoke l1.<java.lang.String: boolean isEmpty()>() Yes
+	return null No
+175: l5 != 46
+	$stack11 = virtualinvoke l1.<java.lang.String: java.lang.String substring(int,int)>(0, l4) No
+	if l5 != 40 goto (branch) Yes
+171: l5 != 41
+	$stack12 = l4 + 1 No
+	l4 = l4 + 1 No
+170: l3 == 0
+	if l5 != 41 goto l4 = l4 + 1 No
+	if l5 != 46 goto (branch) Yes
+167: l5 != 93
+	$stack14 = l4 + 1 No
+	l4 = l4 + 1 No
+41: $stack18 == 0
+	l6#3 = staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>(l5, 10) No
+	return -10086 No
+202: $stack9 != 46
+	l3 = l3 + 1 No
+	$stack10 = virtualinvoke l1.<java.lang.String: java.lang.String substring(int)>(l3) No
+198: $stack6 != $stack7
+	return null Yes
+	l3 = virtualinvoke l2.<java.lang.String: int length()>() No
+194: $stack4 == 0
+	return null Yes
+	l2 = virtualinvoke l0.<comp5111.assignment.cut.Subject$TaskHandler: java.lang.String findNext(java.lang.String)>(l1) Yes
+194: l1 == null
+	$stack4 = virtualinvoke l1.<java.lang.String: boolean isEmpty()>() Yes
+	return null No
+102: $stack2 == 0
+	return 0 Yes
+	$stack3 = virtualinvoke l0.<comp5111.assignment.cut.Subject$TaskHandler: java.lang.String remove(java.lang.String)>(l1) Yes
+102: l1 == null
+	$stack2 = virtualinvoke l1.<java.lang.String: boolean isEmpty()>() Yes
+	return 0 No
+105: $stack3 == null
+	$stack4 = 1 No
+	$stack4 = 0 Yes
+67: l4 >= 0
+	$stack13 = new java.lang.IllegalArgumentException No
+	$stack11 = l2 + 1 No
+65: l3 != 40
+	l4 = virtualinvoke l1.<java.lang.String: int indexOf(int,int)>(41, l2) No
+	l2 = l2 + 1 Yes
+62: l3 != 91
+	return null No
+	if l3 != 40 goto l2 = l2 + 1 Yes
+62: l3 == 46
+	if l3 != 91 goto (branch) Yes
+	return null No
+60: l2 >= $stack6
+	l3 = virtualinvoke l1.<java.lang.String: char charAt(int)>(l2) Yes
+	return null Yes
+57: $stack5 == 0
+	return null Yes
+	l2 = 0 Yes
+57: l1 == null
+	$stack5 = virtualinvoke l1.<java.lang.String: boolean isEmpty()>() Yes
+	return null No
+115: $stack4 == 0
+	return 0 Yes
+	l2 = 0 Yes
+142: l3 == 46
+	if l3 != 91 goto (branch) Yes
+	return 0 No
+115: l1 == null
+	$stack4 = virtualinvoke l1.<java.lang.String: boolean isEmpty()>() Yes
+	return 0 No
+140: l2 >= $stack5
+	l3 = virtualinvoke l1.<java.lang.String: char charAt(int)>(l2) Yes
+	return 0 Yes
+120: l3 == 46
+	if l3 != 40 goto (branch) Yes
+	return 0 No
+137: $stack4 == 0
+	return 0 Yes
+	l2 = 0 Yes
+118: l2 >= $stack5
+	l3 = virtualinvoke l1.<java.lang.String: char charAt(int)>(l2) Yes
+	return 0 Yes
+137: l1 == null
+	$stack4 = virtualinvoke l1.<java.lang.String: boolean isEmpty()>() Yes
+	return 0 No
+123: l3 != 91
+	return 1 No
+	l2 = l2 + 1 Yes
+120: l3 != 40
+	return 0 No
+	if l3 != 91 goto l2 = l2 + 1 Yes
+145: l3 != 40
+	return 1 No
+	l2 = l2 + 1 Yes
+142: l3 != 91
+	return 0 No
+	if l3 != 40 goto l2 = l2 + 1 Yes
+83: l1 == null
+	$stack4 = virtualinvoke l1.<java.lang.String: boolean isEmpty()>() Yes
+	return l1 No
+83: $stack4 == 0
+	return l1 Yes
+	l2 = 0 Yes
+86: l2 >= $stack5
+	l3 = virtualinvoke l1.<java.lang.String: char charAt(int)>(l2) Yes
+	return l1 Yes
+88: l3 == 46
+	if l3 == 40 goto $stack7 = virtualinvoke l1.<java.lang.String: java.lang.String substring(int,int)>(0, l2) Yes
+	$stack7 = virtualinvoke l1.<java.lang.String: java.lang.String substring(int,int)>(0, l2) No
+88: l3 == 40
+	if l3 != 91 goto l2 = l2 + 1 Yes
+	$stack7 = virtualinvoke l1.<java.lang.String: java.lang.String substring(int,int)>(0, l2) No
+88: l3 != 91
+	$stack7 = virtualinvoke l1.<java.lang.String: java.lang.String substring(int,int)>(0, l2) No
+	l2 = l2 + 1 Yes
+
+comp5111.assignment.cut.Subject$TextHandler
+========================================
+372: l8 != 117
+	l6 = 1 No
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String,char)>(l2, l8) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\u0001") No
+378: l8 != 92
+	l5 = 1 No
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String,char)>(l2, l8) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\u0001") No
+368: l8 != 110
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l2) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\n") No
+	if l8 != 98 goto (branch) No
+370: l8 != 98
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l2) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\u0008") No
+	if l8 != 117 goto l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String,char)>(l2, l8) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\u0001") No
+384: l5 == 0
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l2) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	return l2 Yes
+366: l8 != 116
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l2) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\t") No
+	if l8 != 110 goto (branch) No
+286: l7 != 12
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	if l7 != 13 goto (branch) No
+364: l8 != 102
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l2) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\f") No
+	if l8 != 116 goto (branch) No
+362: l8 != 114
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l2) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\r") No
+	if l8 != 102 goto (branch) No
+280: l7 != 10
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	if l7 != 9 goto (branch) No
+298: l2 == 0
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\'") No
+360: l8 != 34
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l2) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\"") No
+	if l8 != 114 goto (branch) No
+283: l7 != 9
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	if l7 != 12 goto (branch) No
+297: l7 != 39
+	if l2 == 0 goto l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\'") No
+	if l7 != 34 goto (branch) Yes
+358: l8 != 39
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l2) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\'") No
+	if l8 != 34 goto (branch) No
+276: l7 >= 32
+	if l7 != 8 goto (branch) No
+	if l7 != 39 goto (branch) Yes
+293: l7 <= 15
+	$stack25 = virtualinvoke l0.<comp5111.assignment.cut.Subject$TextHandler: java.lang.String hex(char)>(l7) No
+	$stack23 = virtualinvoke l0.<comp5111.assignment.cut.Subject$TextHandler: java.lang.String hex(char)>(l7) No
+356: l8 != 92
+	l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l2) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	if l8 != 39 goto (branch) No
+277: l7 != 8
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	if l7 != 10 goto (branch) No
+289: l7 != 13
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	if l7 <= 15 goto $stack23 = virtualinvoke l0.<comp5111.assignment.cut.Subject$TextHandler: java.lang.String hex(char)>(l7) No
+353: l5 == 0
+	l5 = 0 No
+	if l8 != 92 goto l2 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String,char)>(l2, l8) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\u0001") No
+272: l7 <= 255
+	$stack39 = virtualinvoke l0.<comp5111.assignment.cut.Subject$TextHandler: java.lang.String hex(char)>(l7) No
+	if l7 <= 127 goto (branch) Yes
+308: l3 == 0
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001/") No
+344: $stack28 != 4
+	$stack29 = virtualinvoke $stack11.<java.lang.StringBuilder: java.lang.String toString()>() No
+	l7 = l7 + 1 No
+274: l7 <= 127
+	$stack37 = virtualinvoke l0.<comp5111.assignment.cut.Subject$TextHandler: java.lang.String hex(char)>(l7) No
+	if l7 >= 32 goto (branch) Yes
+307: l7 != 47
+	if l3 == 0 goto l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001/") No
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String,char)>(l4, l7) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\u0001") Yes
+342: l6 == 0
+	virtualinvoke $stack11.<java.lang.StringBuilder: java.lang.StringBuilder append(char)>(l8) No
+	if l5 == 0 goto (branch) No
+266: l6 >= l5
+	l7 = virtualinvoke l1.<java.lang.String: char charAt(int)>(l6) Yes
+	return l4 Yes
+304: l7 != 92
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	if l7 != 47 goto l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String,char)>(l4, l7) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\u0001") Yes
+340: l7 >= l3
+	l8 = virtualinvoke l1.<java.lang.String: char charAt(int)>(l7) No
+	if l5 == 0 goto return l2 Yes
+270: l7 <= 4095
+	$stack41 = virtualinvoke l0.<comp5111.assignment.cut.Subject$TextHandler: java.lang.String hex(char)>(l7) No
+	if l7 <= 255 goto (branch) Yes
+301: l7 != 34
+	l4 = dynamicinvoke "makeConcatWithConstants" <java.lang.String (java.lang.String)>(l4) <java.lang.invoke.StringConcatFactory: java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup,java.lang.String,java.lang.invoke.MethodType,java.lang.String,java.lang.Object[])>("\u0001\\") No
+	if l7 != 92 goto (branch) Yes
+331: l1 != null
+	return null No
+	l2 = "" Yes
+226: 0 > l2
+	$stack7 = lengthof l1 No
+	return null No
+241: l2 <= $stack7
+	return null No
+	l4 = l2 No
+226: l2 <= $stack7
+	return null No
+	l4 = l2 No
+241: 0 > l2
+	$stack7 = lengthof l1 No
+	return null No
+260: l1 != null
+	return null No
+	l4 = "" Yes
+226: l1 == null
+	$stack5 = lengthof l1 No
+	return null Yes
+241: $stack5 < l3
+	if 0 > l2 goto return null No
+	return null No
+226: $stack5 < l3
+	if 0 > l2 goto return null No
+	return null No
+230: l4 >= l3
+	$stack8 = staticinvoke <java.lang.Character: int codePointAt(char[],int,int)>(l1, l4, l3) No
+	return l1 No
+245: l4 >= l3
+	$stack8 = staticinvoke <java.lang.Character: int codePointAt(char[],int,int)>(l1, l4, l3) No
+	return l1 No
+215: l1 >= 1
+	return null Yes
+	$stack2 = newarray (char)[l1] Yes
+
+
+Summary
+========================================
+comp5111.assignment.cut.Subject$ParameterHandler
+percentage: 0.3869565
+
+comp5111.assignment.cut.Subject$SortTools
+percentage: 0.07258064
+
+comp5111.assignment.cut.Subject$NumberHandler
+percentage: 0.30392158
+
+comp5111.assignment.cut.Subject$TaskHandler
+percentage: 0.5686275
+
+comp5111.assignment.cut.Subject$TextHandler
+percentage: 0.19318181
+
+Overall: 
+0.31417114
