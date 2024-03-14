@@ -22,4 +22,31 @@ javac -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*" -d "%ROOT_DIR%\target\classes"
 
 :: 3. we run the main method of castle.comp5111.example.EntryPoint
 java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
+    comp5111.assignment.Assignment1 0 comp5111.assignment.cut.Regression_0_Test -process-dir "%ROOT_DIR%\raw-classes"
+
+java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
+    comp5111.assignment.Assignment1 1 comp5111.assignment.cut.Regression_0_Test -process-dir "%ROOT_DIR%\raw-classes"
+
+java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
+    comp5111.assignment.Assignment1 0 comp5111.assignment.cut.Regression_1_Test -process-dir "%ROOT_DIR%\raw-classes"
+
+java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
+    comp5111.assignment.Assignment1 1 comp5111.assignment.cut.Regression_1_Test -process-dir "%ROOT_DIR%\raw-classes"
+
+java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
+    comp5111.assignment.Assignment1 0 comp5111.assignment.cut.Regression_2_Test -process-dir "%ROOT_DIR%\raw-classes"
+
+java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
+    comp5111.assignment.Assignment1 1 comp5111.assignment.cut.Regression_2_Test -process-dir "%ROOT_DIR%\raw-classes"
+
+java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
     comp5111.assignment.Assignment1 0 comp5111.assignment.cut.Regression_3_Test -process-dir "%ROOT_DIR%\raw-classes"
+
+java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
+    comp5111.assignment.Assignment1 1 comp5111.assignment.cut.Regression_3_Test -process-dir "%ROOT_DIR%\raw-classes"
+
+java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
+    comp5111.assignment.Assignment1 0 comp5111.assignment.cut.Regression_4_Test -process-dir "%ROOT_DIR%\raw-classes"
+
+java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
+    comp5111.assignment.Assignment1 1 comp5111.assignment.cut.Regression_4_Test -process-dir "%ROOT_DIR%\raw-classes"
