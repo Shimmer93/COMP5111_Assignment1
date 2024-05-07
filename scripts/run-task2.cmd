@@ -41,15 +41,3 @@ FOR %%C IN (Subject_evosuite33_ESTest, Subject_evosuite66_ESTest, Subject_evosui
     java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\raw-classes;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes" comp5111.assignment.Assignment2 comp5111.assignment.cut.%%C -process-dir "%ROOT_DIR%\raw-classes"
 
 )
-
-@REM java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
-@REM     comp5111.assignment.Assignment2 comp5111.assignment.cut.Subject_1_Test -process-dir "%ROOT_DIR%\raw-classes"
-
-@REM java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
-@REM     comp5111.assignment.Assignment2 comp5111.assignment.cut.Subject_2_Test -process-dir "%ROOT_DIR%\raw-classes"
-
-@REM java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
-@REM     comp5111.assignment.Assignment2 comp5111.assignment.cut.Subject_3_Test -process-dir "%ROOT_DIR%\raw-classes"
-
-@REM java -classpath ".;%CLASSPATH%;%ROOT_DIR%\lib\*;%ROOT_DIR%\target\classes;%ROOT_DIR%\target\test-classes"^
-@REM     comp5111.assignment.Assignment2 comp5111.assignment.cut.Subject_4_Test -process-dir "%ROOT_DIR%\raw-classes"

@@ -1,0 +1,11 @@
+Line 758: if (trueCount < 1) {
+Fixed: if (trueCount < 0) {
+
+Rationale: This condition causes mistakes when trueCount == 0
+
+fault-revealing-evosuite0: score: 0.577350, rank: 3
+fault-revealing-evosuite1: score: 0.534522, rank: 18
+fault-revealing-evosuite2: score: 0.534522, rank: 19
+fault-revealing-randoop1: score: 0.127000, rank: 42
+fault-revealing-randoop1: score: 0.831209, rank: 10
+fault-revealing-randoop2: score: 0.577350, rank: 4

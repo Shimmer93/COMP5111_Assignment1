@@ -1,0 +1,11 @@
+Line 525: if (tmp != -1 && tmp < idx) {
+Fixed: if (tmp != -1 && tmp <= idx) {
+
+Rationale: The original code cannot ensure that the first encountered separator
+
+fault-revealing-evosuite0: score: 0.577350, rank: 3
+fault-revealing-evosuite1: score: 0.534522, rank: 18
+fault-revealing-evosuite2: score: 0.267261, rank: 216
+fault-revealing-randoop1: score: 0.154303, rank: 26
+fault-revealing-randoop1: score: 0.617914, rank: 80
+fault-revealing-randoop2: score: 0.176777, rank: 35

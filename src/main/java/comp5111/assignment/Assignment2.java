@@ -27,7 +27,7 @@ public class Assignment2 {
         runJunitTests(testClassName);
 
         Counter.report(testClassName);
-        Counter.reportSuspiciousLocations(testClassName);
+        // Counter.reportSuspiciousLocations(testClassName);
     }
 
     private static void instrumentWithSoot(String [] classArgs){

@@ -76,7 +76,7 @@ public class Counter {
     public static void report(String testClassName) {
         // TODO
     	try {
-			OutputStream os = new FileOutputStream("report/" + testClassName + "_ranking.tsv");
+			OutputStream os = new FileOutputStream("reports/" + testClassName + "_ranking.tsv");
 
 			for (StmtData stmtData : stmtDataMap.values()) {
                 stmtData.score = ochiai(stmtData.numPassExec, stmtData.numFailExec, numPassTests, numFailTests);
@@ -125,12 +125,12 @@ public class Counter {
 
     public static void reportSuspiciousLocations(String testClassName) {
         try {
-			OutputStream os = new FileOutputStream("report/" + testClassName + "_suspects.txt");
+			OutputStream os = new FileOutputStream("reports/" + testClassName + "_suspects.txt");
 
             for (StmtData stmtData : stmtDataMap.values()) {
                 if (stmtData.score > 0.5) {
-                    os.write(String.format("%s\t%s\t%d\n", stmtData.methodSignature, 
-                            stmtData.stmtString, stmtData.lineNumber).getBytes());
+                    os.write(String.format("%s\t%s\t%d\t%f\t%d\n", stmtData.methodSignature, 
+                            stmtData.stmtString, stmtData.lineNumber, stmtData.score, stmtData.rank).getBytes());
                 }
             }
 

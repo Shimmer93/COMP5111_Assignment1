@@ -6,6 +6,17 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" path="src/test/evosuite4"/>
+	<classpathentry kind="src" path="src/test/evosuite2"/>
+	<classpathentry kind="src" path="src/test/evosuite3"/>
+	<classpathentry kind="src" path="src/test/evosuite0"/>
+	<classpathentry kind="src" path="src/test/evosuite1"/>
+	<classpathentry kind="src" path="src/test/refined-evosuite2"/>
+	<classpathentry kind="src" path="src/test/refined-evosuite1"/>
+	<classpathentry kind="src" path="src/test/refined-evosuite0"/>
+	<classpathentry kind="src" path="src/test/refined-randoop1"/>
+	<classpathentry kind="src" path="src/test/refined-randoop2"/>
+	<classpathentry kind="src" path="src/test/refined-randoop0"/>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="test" value="true"/>
